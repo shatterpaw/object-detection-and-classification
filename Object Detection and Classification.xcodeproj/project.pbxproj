@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83D382A22943E50F000DD090 /* Object_Detection_and_ClassificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382A12943E50F000DD090 /* Object_Detection_and_ClassificationApp.swift */; };
+		83D382A42943E50F000DD090 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382A32943E50F000DD090 /* ContentView.swift */; };
+		83D382A62943E510000DD090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D382A52943E510000DD090 /* Assets.xcassets */; };
+		83D382A92943E510000DD090 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D382A82943E510000DD090 /* Preview Assets.xcassets */; };
+		83D382D02943E795000DD090 /* cereal_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 83D382CF2943E795000DD090 /* cereal_model.tflite */; };
+		83D382D22943E7E9000DD090 /* HostedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382D12943E7E9000DD090 /* HostedViewController.swift */; };
+		83D382D42943E843000DD090 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382D32943E843000DD090 /* CameraViewController.swift */; };
+		83D382D82943E8C8000DD090 /* CameraViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382D72943E8C8000DD090 /* CameraViewControllerViewModel.swift */; };
+		83D382DA2943EAD9000DD090 /* ObjectDetectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382D92943EAD9000DD090 /* ObjectDetectionHelper.swift */; };
+		83D382DC2943FAA4000DD090 /* DetectedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382DB2943FAA4000DD090 /* DetectedObject.swift */; };
+		83D382DF294404E4000DD090 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382DE294404E4000DD090 /* OverlayView.swift */; };
+		83D382E229441E18000DD090 /* CameraViewControllerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382E129441E18000DD090 /* CameraViewControllerViewModelTests.swift */; };
+		83D382E429442055000DD090 /* ObjectDetectionHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D382E329442055000DD090 /* ObjectDetectionHelperTests.swift */; };
+		B4CA6F1EDCE5A30F0BB6B2F5 /* Pods_Object_Detection_and_ClassificationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC4E33BB32A8255C4794AC1 /* Pods_Object_Detection_and_ClassificationTests.framework */; };
+		BBD5AFBA8680DB5653838553 /* Pods_Object_Detection_and_Classification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C034FE632F7FC92EA760C20 /* Pods_Object_Detection_and_Classification.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83D382AF2943E510000DD090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83D382962943E50F000DD090 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83D3829D2943E50F000DD090;
+			remoteInfo = "Object Detection and Classification";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		365391E0C9003CB7170474BA /* Pods-Object Detection and ClassificationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Object Detection and ClassificationTests.release.xcconfig"; path = "Target Support Files/Pods-Object Detection and ClassificationTests/Pods-Object Detection and ClassificationTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DC4E33BB32A8255C4794AC1 /* Pods_Object_Detection_and_ClassificationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Object_Detection_and_ClassificationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835DE788176DC3425CE227A1 /* Pods-Object Detection and Classification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Object Detection and Classification.release.xcconfig"; path = "Target Support Files/Pods-Object Detection and Classification/Pods-Object Detection and Classification.release.xcconfig"; sourceTree = "<group>"; };
+		83D3829E2943E50F000DD090 /* Object Detection and Classification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Object Detection and Classification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D382A12943E50F000DD090 /* Object_Detection_and_ClassificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_Detection_and_ClassificationApp.swift; sourceTree = "<group>"; };
+		83D382A32943E50F000DD090 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83D382A52943E510000DD090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83D382A82943E510000DD090 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83D382AE2943E510000DD090 /* Object Detection and ClassificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Object Detection and ClassificationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D382CF2943E795000DD090 /* cereal_model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cereal_model.tflite; sourceTree = "<group>"; };
+		83D382D12943E7E9000DD090 /* HostedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedViewController.swift; sourceTree = "<group>"; };
+		83D382D32943E843000DD090 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		83D382D72943E8C8000DD090 /* CameraViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewControllerViewModel.swift; sourceTree = "<group>"; };
+		83D382D92943EAD9000DD090 /* ObjectDetectionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionHelper.swift; sourceTree = "<group>"; };
+		83D382DB2943FAA4000DD090 /* DetectedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedObject.swift; sourceTree = "<group>"; };
+		83D382DE294404E4000DD090 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		83D382E029441E18000DD090 /* Object Detection and ClassificationTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Object Detection and ClassificationTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		83D382E129441E18000DD090 /* CameraViewControllerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewControllerViewModelTests.swift; sourceTree = "<group>"; };
+		83D382E329442055000DD090 /* ObjectDetectionHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionHelperTests.swift; sourceTree = "<group>"; };
+		9C034FE632F7FC92EA760C20 /* Pods_Object_Detection_and_Classification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Object_Detection_and_Classification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3D7BA92E1E92756F4E8ECF /* Pods-Object Detection and ClassificationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Object Detection and ClassificationTests.debug.xcconfig"; path = "Target Support Files/Pods-Object Detection and ClassificationTests/Pods-Object Detection and ClassificationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9C84F849C6167C22E7A22CC /* Pods-Object Detection and Classification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Object Detection and Classification.debug.xcconfig"; path = "Target Support Files/Pods-Object Detection and Classification/Pods-Object Detection and Classification.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83D3829B2943E50F000DD090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD5AFBA8680DB5653838553 /* Pods_Object_Detection_and_Classification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D382AB2943E510000DD090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CA6F1EDCE5A30F0BB6B2F5 /* Pods_Object_Detection_and_ClassificationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0725E5A972410C3F30738B85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9C84F849C6167C22E7A22CC /* Pods-Object Detection and Classification.debug.xcconfig */,
+				835DE788176DC3425CE227A1 /* Pods-Object Detection and Classification.release.xcconfig */,
+				9F3D7BA92E1E92756F4E8ECF /* Pods-Object Detection and ClassificationTests.debug.xcconfig */,
+				365391E0C9003CB7170474BA /* Pods-Object Detection and ClassificationTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83D382952943E50F000DD090 = {
+			isa = PBXGroup;
+			children = (
+				83D382A02943E50F000DD090 /* Object Detection and Classification */,
+				83D382B12943E510000DD090 /* Object Detection and ClassificationTests */,
+				83D3829F2943E50F000DD090 /* Products */,
+				0725E5A972410C3F30738B85 /* Pods */,
+				C9E749CAEDA6C0987F8C0711 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83D3829F2943E50F000DD090 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83D3829E2943E50F000DD090 /* Object Detection and Classification.app */,
+				83D382AE2943E510000DD090 /* Object Detection and ClassificationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83D382A02943E50F000DD090 /* Object Detection and Classification */ = {
+			isa = PBXGroup;
+			children = (
+				83D382A52943E510000DD090 /* Assets.xcassets */,
+				83D382CB2943E746000DD090 /* data */,
+				83D382A12943E50F000DD090 /* Object_Detection_and_ClassificationApp.swift */,
+				83D382A72943E510000DD090 /* Preview Content */,
+				83D382CC2943E74D000DD090 /* Utilities */,
+				83D382CD2943E762000DD090 /* View Models */,
+				83D382CE2943E76B000DD090 /* Views */,
+				83D382DD2943FAAB000DD090 /* Models */,
+			);
+			path = "Object Detection and Classification";
+			sourceTree = "<group>";
+		};
+		83D382A72943E510000DD090 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				83D382A82943E510000DD090 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83D382B12943E510000DD090 /* Object Detection and ClassificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				83D382E129441E18000DD090 /* CameraViewControllerViewModelTests.swift */,
+				83D382E029441E18000DD090 /* Object Detection and ClassificationTests-Bridging-Header.h */,
+				83D382E329442055000DD090 /* ObjectDetectionHelperTests.swift */,
+			);
+			path = "Object Detection and ClassificationTests";
+			sourceTree = "<group>";
+		};
+		83D382CB2943E746000DD090 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				83D382CF2943E795000DD090 /* cereal_model.tflite */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		83D382CC2943E74D000DD090 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				83D382D92943EAD9000DD090 /* ObjectDetectionHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		83D382CD2943E762000DD090 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				83D382D72943E8C8000DD090 /* CameraViewControllerViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		83D382CE2943E76B000DD090 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83D382A32943E50F000DD090 /* ContentView.swift */,
+				83D382D12943E7E9000DD090 /* HostedViewController.swift */,
+				83D382D32943E843000DD090 /* CameraViewController.swift */,
+				83D382DE294404E4000DD090 /* OverlayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83D382DD2943FAAB000DD090 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83D382DB2943FAA4000DD090 /* DetectedObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9E749CAEDA6C0987F8C0711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C034FE632F7FC92EA760C20 /* Pods_Object_Detection_and_Classification.framework */,
+				7DC4E33BB32A8255C4794AC1 /* Pods_Object_Detection_and_ClassificationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83D3829D2943E50F000DD090 /* Object Detection and Classification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D382C22943E510000DD090 /* Build configuration list for PBXNativeTarget "Object Detection and Classification" */;
+			buildPhases = (
+				06F4650E930EFB8318E04636 /* [CP] Check Pods Manifest.lock */,
+				83D3829A2943E50F000DD090 /* Sources */,
+				83D3829B2943E50F000DD090 /* Frameworks */,
+				83D3829C2943E50F000DD090 /* Resources */,
+				EEB3A14E39E24BADFD8840B8 /* [CP] Embed Pods Frameworks */,
+				AD6A35A07C0BCD07F3E8B6B3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Object Detection and Classification";
+			productName = "Object Detection and Classification";
+			productReference = 83D3829E2943E50F000DD090 /* Object Detection and Classification.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83D382AD2943E510000DD090 /* Object Detection and ClassificationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D382C52943E510000DD090 /* Build configuration list for PBXNativeTarget "Object Detection and ClassificationTests" */;
+			buildPhases = (
+				166F7E59580B58311B510314 /* [CP] Check Pods Manifest.lock */,
+				83D382AA2943E510000DD090 /* Sources */,
+				83D382AB2943E510000DD090 /* Frameworks */,
+				83D382AC2943E510000DD090 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83D382B02943E510000DD090 /* PBXTargetDependency */,
+			);
+			name = "Object Detection and ClassificationTests";
+			productName = "Object Detection and ClassificationTests";
+			productReference = 83D382AE2943E510000DD090 /* Object Detection and ClassificationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83D382962943E50F000DD090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					83D3829D2943E50F000DD090 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					83D382AD2943E510000DD090 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+						TestTargetID = 83D3829D2943E50F000DD090;
+					};
+				};
+			};
+			buildConfigurationList = 83D382992943E50F000DD090 /* Build configuration list for PBXProject "Object Detection and Classification" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83D382952943E50F000DD090;
+			productRefGroup = 83D3829F2943E50F000DD090 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83D3829D2943E50F000DD090 /* Object Detection and Classification */,
+				83D382AD2943E510000DD090 /* Object Detection and ClassificationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83D3829C2943E50F000DD090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D382D02943E795000DD090 /* cereal_model.tflite in Resources */,
+				83D382A92943E510000DD090 /* Preview Assets.xcassets in Resources */,
+				83D382A62943E510000DD090 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D382AC2943E510000DD090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06F4650E930EFB8318E04636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Object Detection and Classification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		166F7E59580B58311B510314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Object Detection and ClassificationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6A35A07C0BCD07F3E8B6B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Object Detection and Classification/Pods-Object Detection and Classification-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Object Detection and Classification/Pods-Object Detection and Classification-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Object Detection and Classification/Pods-Object Detection and Classification-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB3A14E39E24BADFD8840B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Object Detection and Classification/Pods-Object Detection and Classification-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Object Detection and Classification/Pods-Object Detection and Classification-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Object Detection and Classification/Pods-Object Detection and Classification-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83D3829A2943E50F000DD090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D382D22943E7E9000DD090 /* HostedViewController.swift in Sources */,
+				83D382DF294404E4000DD090 /* OverlayView.swift in Sources */,
+				83D382D82943E8C8000DD090 /* CameraViewControllerViewModel.swift in Sources */,
+				83D382D42943E843000DD090 /* CameraViewController.swift in Sources */,
+				83D382A42943E50F000DD090 /* ContentView.swift in Sources */,
+				83D382DC2943FAA4000DD090 /* DetectedObject.swift in Sources */,
+				83D382DA2943EAD9000DD090 /* ObjectDetectionHelper.swift in Sources */,
+				83D382A22943E50F000DD090 /* Object_Detection_and_ClassificationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D382AA2943E510000DD090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D382E429442055000DD090 /* ObjectDetectionHelperTests.swift in Sources */,
+				83D382E229441E18000DD090 /* CameraViewControllerViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83D382B02943E510000DD090 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D3829D2943E50F000DD090 /* Object Detection and Classification */;
+			targetProxy = 83D382AF2943E510000DD090 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		83D382C02943E510000DD090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83D382C12943E510000DD090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83D382C32943E510000DD090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9C84F849C6167C22E7A22CC /* Pods-Object Detection and Classification.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Object Detection and Classification/Preview Content\"";
+				DEVELOPMENT_TEAM = HLPXPCV66S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To detect objects";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "flyingfur.Object-Detection-and-Classification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83D382C42943E510000DD090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 835DE788176DC3425CE227A1 /* Pods-Object Detection and Classification.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Object Detection and Classification/Preview Content\"";
+				DEVELOPMENT_TEAM = HLPXPCV66S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To detect objects";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "flyingfur.Object-Detection-and-Classification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83D382C62943E510000DD090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F3D7BA92E1E92756F4E8ECF /* Pods-Object Detection and ClassificationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HLPXPCV66S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "flyingfur.Object-Detection-and-ClassificationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Object Detection and ClassificationTests/Object Detection and ClassificationTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Object Detection and Classification.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Object Detection and Classification";
+			};
+			name = Debug;
+		};
+		83D382C72943E510000DD090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365391E0C9003CB7170474BA /* Pods-Object Detection and ClassificationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HLPXPCV66S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "flyingfur.Object-Detection-and-ClassificationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Object Detection and ClassificationTests/Object Detection and ClassificationTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Object Detection and Classification.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Object Detection and Classification";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83D382992943E50F000DD090 /* Build configuration list for PBXProject "Object Detection and Classification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D382C02943E510000DD090 /* Debug */,
+				83D382C12943E510000DD090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D382C22943E510000DD090 /* Build configuration list for PBXNativeTarget "Object Detection and Classification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D382C32943E510000DD090 /* Debug */,
+				83D382C42943E510000DD090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D382C52943E510000DD090 /* Build configuration list for PBXNativeTarget "Object Detection and ClassificationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D382C62943E510000DD090 /* Debug */,
+				83D382C72943E510000DD090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83D382962943E50F000DD090 /* Project object */;
+}
