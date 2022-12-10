@@ -15,7 +15,8 @@ struct OverlayView: View {
     
     var body: some View {
         Rectangle()
-            .strokeBorder(.red, style: .init())
+//            .strokeBorder(.red, lineWidth: 2, style: .init())
+            .strokeBorder(.red, lineWidth: 2)
             .background(.clear)
             .frame(width: frame.width, height: frame.height)
             .position(frame.origin)
